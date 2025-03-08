@@ -1,4 +1,4 @@
 {
-    "reminder_interval": 60,
+    "reminder_interval": 1,
     "enabled": true
 }
