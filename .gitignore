@@ -1,0 +1,12 @@
+# Virtual environment
+.venv/
+
+# Build directory
+build/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# .vscode
+.vscode/
