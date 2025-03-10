@@ -1,7 +1,7 @@
 from PySide6.QtWidgets import QSystemTrayIcon, QMenu
 from PySide6.QtGui import QIcon, QAction
+from core.settings import settings
 import sys
-import os
 
 class TrayIcon(QSystemTrayIcon):
     def __init__(self, reminder, main_window, parent=None):
@@ -15,11 +15,9 @@ class TrayIcon(QSystemTrayIcon):
         show_action = QAction("Show Window", self)
         show_action.triggered.connect(self.show_main_window)
 
-        show_action = QAction("Show Window", self)
-        show_action.triggered.connect(self.show_main_window)
-
         toggle_action = QAction("Enable Reminders", self, checkable=True)
-        toggle_action.setChecked(True)
+        checked = settings["enabled"]
+        toggle_action.setChecked(checked)
         toggle_action.triggered.connect(self.toggle_reminders)
 
         exit_action = QAction("Exit", self)
@@ -39,7 +37,7 @@ class TrayIcon(QSystemTrayIcon):
         self.main_window.activateWindow()
     
     def toggle_reminders(self, checked):
-        from core.settings import settings, save_settings
+        from core.settings import save_settings
         settings["enabled"] = checked
         save_settings(settings)
         if checked:

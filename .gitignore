@@ -1,9 +1,6 @@
 # Virtual environment
 .venv/
 
-# Build directory
-build/
-
 # Python cache files
 __pycache__/
 *.py[cod]
@@ -11,5 +8,7 @@ __pycache__/
 # .vscode
 .vscode/
 
-# Dist
+# PyInstaller files
 dist/
+build/
+*.spec

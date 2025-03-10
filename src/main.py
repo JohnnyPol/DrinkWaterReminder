@@ -6,6 +6,7 @@ from core.reminder import Reminder
 
 def main():
     app = QApplication(sys.argv)
+    app.setQuitOnLastWindowClosed(False)
 
     reminder = Reminder()
     

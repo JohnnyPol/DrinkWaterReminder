@@ -1,4 +1,7 @@
 {
-    "reminder_interval": 1,
-    "enabled": true
+    "reminder_interval": 0.16666666666666666,
+    "enabled": false,
+    "reminder_hours": 0,
+    "reminder_minutes": 0,
+    "reminder_seconds": 10
 }
