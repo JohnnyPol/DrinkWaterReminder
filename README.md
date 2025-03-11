@@ -26,7 +26,7 @@ A simple and elegant reminder app designed to help you stay hydrated throughout 
 
 ### 🛠 Installation via Installer
 
-For end-users, the easiest way to install the Drink Water Reminder app is via the installer from this [link](). Once you run the installer:
+For end-users, the easiest way to install the Drink Water Reminder app is via the installer from the repository's [release](https://github.com/JohnnyPol/DrinkWaterReminder/releases/tag/v1.0.0). <br> Once you run the installer:
 1. You will find the application under C:\Program Files (x86)\DrinkWaterReminder\
 
 2. A shortcut may be created on your **desktop** or in your **Start menu** (depending on your installer settings).
@@ -99,11 +99,8 @@ You can configure your app to run on startup by adding it to the Startup folder:
 ---
 
 ## 📝 Contributing
-Feel free to fork, modify, or extend this app!
+Feel free to fork, modify, or extend this app! <br>
+Any contribution is more than welcome!
 
 ---
-
-## 📜 License
-
-This project is open-source, feel free to use, modify, and share!
 
