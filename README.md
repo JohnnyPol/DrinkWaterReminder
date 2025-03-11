@@ -24,15 +24,28 @@ A simple and elegant reminder app designed to help you stay hydrated throughout 
 ### 📌 Prerequisites
 - **Python 3.8+** installed ([Download here](https://www.python.org/downloads/)).
 
-### 🛠 Installation
+### 🛠 Installation via Installer
+
+For end-users, the easiest way to install the Drink Water Reminder app is via the installer from this [link](). Once you run the installer:
+1. You will find the application under C:\Program Files (x86)\DrinkWaterReminder\
+
+2. A shortcut may be created on your **desktop** or in your **Start menu** (depending on your installer settings).
+
+3. Simply run `DrinkWaterReminder.exe` to launch the application.
+
+With the installer, you do **not** need Python installed.
+
+
+### 🛠 Installation via Source
 
 1. Clone this repository or download the source code:
 ```bash
-git clone <your_repo_link>
+git clone https://github.com/JohnnyPol/DrinkWaterReminder.git
 ```
 
 2. Navigate into the project directory and install dependencies:
 ```bash
+cd DrinkWaterReminder
 pip install -r requirements.txt
 ```
 
@@ -53,7 +66,7 @@ To package your app as a Windows executable (`.exe`), use PyInstaller:
 
 ```bash
 pip install pyinstaller
-pyinstaller --onefile --windowed --icon=assets/icons/drop.ico src/main.py
+pyinstaller --onefile --noconsole --icon=assets/icons/favicon.ico --add-data="assets;assets" src/main.py
 ```
 
 Your packaged app will appear in the `dist/` directory.
@@ -72,7 +85,7 @@ You can configure your app to run on startup by adding it to the Startup folder:
 ## 📌 Using the App
 - **Set interval:** Use the spin boxes to select how often reminders appear.
 - Click **"Start"** to begin reminders and **"Stop"** to pause.
-- Close (`X`) to minimize to system tray. Right-click the tray icon for options:
+- Close (`X`) to minimize to the system tray. Right-click the tray icon for options:
   - Show/hide the main window
   - Enable/disable reminders
   - Exit the application
