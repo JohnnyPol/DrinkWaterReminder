@@ -1,6 +1,12 @@
 # 💧 Drink Water Reminder App
+![OS](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+![Python](https://img.shields.io/badge/python-3.8%20|%203.9%20|%203.10%20|%203.11-blue.svg?style=for-the-badge)
+![Version 1.0.0](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://choosealicense.com/licenses/mit/)
 
-A simple and elegant reminder app designed to help you stay hydrated throughout your day! It periodically prompts you with customizable reminders to drink water.
+
+	
+> A simple and elegant reminder app designed to help you stay hydrated throughout your day! It periodically prompts you with customizable reminders to drink water.
 
 ---
 
