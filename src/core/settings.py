@@ -4,7 +4,7 @@ import os
 CONFIG_FILE = os.path.join(os.path.dirname(__file__), "../../config.json")
 
 DEFAULT_CONFIG = {
-    "reminder_interval": 60,  # in minutes
+    "reminder_interval": 10,  # in minutes
     "enabled": True
 }
 

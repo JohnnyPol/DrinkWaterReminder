@@ -1,6 +1,6 @@
 {
     "reminder_interval": 0.16666666666666666,
-    "enabled": false,
+    "enabled": true,
     "reminder_hours": 0,
     "reminder_minutes": 0,
     "reminder_seconds": 10

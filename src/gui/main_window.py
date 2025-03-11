@@ -12,6 +12,7 @@ from PySide6.QtGui import QIcon, QCloseEvent, Qt, QFont, QFontDatabase
 from core.settings import settings, save_settings
 from core.notifier import PopupNotification
 
+
 class MainWindow(QMainWindow):
     def __init__(self, reminder):
         super().__init__()
@@ -20,32 +21,32 @@ class MainWindow(QMainWindow):
         
         self.setWindowTitle("Drink Water Reminder")
         self.resize(800, 600)
-        self.setWindowIcon(QIcon("assets/icons/drop.png"))
+        self.setWindowIcon(QIcon("assets\icons\drop.png"))
         
         # Define styles for light and dark themes
         self.light_theme = """
             QMainWindow {
-                background-color: #f0f4f7;
+                background-color: #f5f5f5;
             }
             QLabel#HeaderLabel {
-                font-size: 24px;
+                font-size: 40px;
                 font-weight: bold;
                 color: #2c3e50;
                 padding: 10px;
             }
             QLabel {
-                font-size: 16px;
-                color: #34495e;
+                font-size: 30px;
+                color: #555555;
             }
             QSpinBox {
                 font-size: 16px;
                 padding: 5px;
-                border: 1px solid #bdc3c7;
+                border: 1px solid #cccccc;
                 border-radius: 4px;
-                background-color: #ecf0f1;
+                background-color: #ffffff;
             }
             QPushButton {
-                background-color: #27ae60;
+                background-color: #3498db;
                 color: white;
                 font-size: 16px;
                 padding: 10px 20px;
@@ -53,24 +54,25 @@ class MainWindow(QMainWindow):
                 border-radius: 5px;
             }
             QPushButton:hover {
-                background-color: #2ecc71;
+                background-color: #2980b9;
             }
             QPushButton:pressed {
-                background-color: #1e8449;
+                background-color: #1c5980;
             }
         """
+
         self.dark_theme = """
             QMainWindow {
                 background-color: #2c3e50;
             }
             QLabel#HeaderLabel {
-                font-size: 24px;
+                font-size: 40px;
                 font-weight: bold;
                 color: #ecf0f1;
                 padding: 10px;
             }
             QLabel {
-                font-size: 16px;
+                font-size: 30px;
                 color: #bdc3c7;
             }
             QSpinBox {
@@ -120,13 +122,17 @@ class MainWindow(QMainWindow):
             header_label.font().setPointSize(50)
         else:
             print("Failed to load custom font.")
+        
         main_layout.addWidget(header_label)
         main_layout.addLayout(header_layout)
+        main_layout.addWidget(header_label)
         
         # --- Timer Editor Section ---
         timer_layout = QVBoxLayout()
         timer_label = QLabel("Set reminder interval:")
+        timer_label.setFont(QFont("Cookie", 24))
         timer_layout.addWidget(timer_label)
+        
 
         time_input_layout = QHBoxLayout()
         
